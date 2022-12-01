@@ -7,7 +7,7 @@ export default function DialogControls({ children, suppressEnter, onAccept, onCl
 
     function onKeyDown(event) {
         if (!suppressEnter && event.key === "Enter") {
-            onAccept();
+            onAccept?.();
         }
     }
 
